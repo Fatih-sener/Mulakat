@@ -19,6 +19,7 @@ class CanvasManager {
       rearrange() {
         const canvasWidth = this.canvas.clientWidth;
         const boxesPerRow = Math.floor(canvasWidth / this.boxSize) || 1;
+
         this.boxes.forEach((box, index) => {
           const x = (index % boxesPerRow) * this.boxSize;
           const y = Math.floor(index / boxesPerRow) * this.boxSize;
